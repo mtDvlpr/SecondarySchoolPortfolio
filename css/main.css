@@ -1,0 +1,99 @@
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  font-family: Aileron_SemiBold;
+  color: white;
+  margin: 0px;
+
+  /* Background */
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+
+  /* No select */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Custom font */
+@font-face {
+  font-family: "Aileron_SemiBold";
+  src: url("/fonts/Aileron-SemiBold.otf");
+}
+
+/* Custom logo style */
+.HomeLogo {
+  margin: -5px 6px 0px 0px !important;
+}
+
+/* Title */
+header {
+  font-size: 10vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Cookie message */
+span a {
+  opacity: .8 !important;
+  text-decoration:underline !important;
+}
+
+span a:hover {
+  opacity: 1 !important;
+  text-decoration:none !important;
+}
+
+.cookieinfo-close:hover {
+  background-color: #ffe41a !important;
+}
+
+@media screen and (max-width: 701px) {
+  .cookieinfo-close {
+    min-width: 98% !important;
+  }
+}
+
+/* Google Translate */
+#google_translate_element {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* Background colors */
+@keyframes bgcolor {
+  0% {
+    background-color: #0092ed
+  }
+  25% {
+    background-color: #0000ff
+  }
+  50% {
+    background-color: #230ac9
+  }
+  75% {
+    background-color: #ef2b2b
+  }
+  100% {
+    background-color: #ff0000
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Colors - 149895.csgja.com</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Manoah T"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <link rel="icon" type="image/x-icon" href="/images/logos/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+    
+    <!-- JavaScript -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+    <script>
+    $( document ).on( "pagecreate", function() {
+      $( ".photopopup" ).on({
+        popupbeforeposition: function() {
+          var maxHeight = $( window ).height();
+          $( ".photopopup img" ).css( "max-height", maxHeight-140 );
+        }
+      });
+    });
+    </script>
+  </head>
+  <body>
+		<div id="pag1" data-role="page" data-theme="b">
+			<div data-role="header" style="text-align:center;">
+        <a href="/vwo-4" target="_self" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext"></a>
+				<div style="margin:.6em 0;">Learn colors</div>
+			</div>
+			<div role="main" class="ui-content" style="padding:0px;">
+				<div class="ui-grid-b">
+					<div class="ui-block-a"><a href="#blue"   data-rel="popup" data-position-to="window" data-transition="fade"><img src="/images/colors/blue.jpg"    style="max-width:100%;" /></a></div>
+					<div class="ui-block-b"><a href="#black"  data-rel="popup" data-position-to="window" data-transition="fade"><img src="/images/colors/black.jpg"   style="max-width:100%;" /></a></div>
+					<div class="ui-block-c"><a href="#red"    data-rel="popup" data-position-to="window" data-transition="fade"><img src="/images/colors/red.jpg"     style="max-width:100%;" /></a></div>
+				  <div class="ui-block-a"><a href="#pink"   data-rel="popup" data-position-to="window" data-transition="fade"><img src="/images/colors/pink.jpg"    style="max-width:100%;" /></a></div>
+					<div class="ui-block-b"><a href="#brown"  data-rel="popup" data-position-to="window" data-transition="fade"><img src="/images/colors/brown.jpg"   style="max-width:100%;" /></a></div>
+					<div class="ui-block-c"><a href="#geel"   data-rel="popup" data-position-to="window" data-transition="fade"><img src="/images/colors/yellow.jpg"  style="max-width:100%;" /></a></div>
+				  <div class="ui-block-a"><a href="#green"  data-rel="popup" data-position-to="window" data-transition="fade"><img src="/images/colors/green.jpg"   style="max-width:100%;" /></a></div>
+					<div class="ui-block-b"><a href="#white"  data-rel="popup" data-position-to="window" data-transition="fade"><img src="/images/colors/white.jpg"   style="max-width:100%;" /></a></div>
+					<div class="ui-block-c"><a href="#purple" data-rel="popup" data-position-to="window" data-transition="fade"><img src="/images/colors/purple.jpg"  style="max-width:100%;" /></a></div>
+				</div>
+				<div id="blue" class="photopopup" data-history="false" data-role="popup" data-theme="b" data-overlay-theme="b" data-corners="false"><a class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back">Close</a><img src="/images/colors/blue.jpg" />
+          <audio id="blue1" src="/mp3/colors/blue.mp3">
+            <p>Your browser does not support audio-tags</p>
+          </audio>
+          <button onclick="document.getElementById('blue1').play()">Let's hear blue</button>
+        </div>
+				<div id="black" class="photopopup" data-history="false" data-role="popup" data-theme="b" data-overlay-theme="b" data-corners="false"><a class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back">Close</a><img src="/images/colors/black.jpg" />
+          <audio id="black1" src="/mp3/colors/black.mp3">
+            <p>Your browser does not support audio-tags</p>
+          </audio>
+          <button onclick="document.getElementById('black1').play()">Let's hear black</button>
+				</div>
+				<div id="red" class="photopopup" data-history="false" data-role="popup" data-theme="b" data-overlay-theme="b" data-corners="false"><a class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back">Close</a><img src="/images/colors/red.jpg" />
+          <audio id="red1" src="/mp3/colors/red.mp3">
+            <p>Your browser does not support audio-tags</p>
+          </audio>
+          <button onclick="document.getElementById('red1').play()">Let's hear red</button>
+				</div>
+					<div id="pink" class="photopopup" data-history="false" data-role="popup" data-theme="b" data-overlay-theme="b" data-corners="false"><a class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back">Close</a><img src="/images/colors/pink.jpg" />
+            <audio id="pink1" src="/mp3/colors/pink.mp3">
+              <p>Your browser does not support audio-tags</p>
+            </audio>
+            <button onclick="document.getElementById('pink1').play()">Let's hear pink</button>
+					</div>
+				<div id="brown" class="photopopup" data-history="false" data-role="popup" data-theme="b" data-overlay-theme="b" data-corners="false"><a class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back">Close</a><img src="/images/colors/brown.jpg" />
+          <audio id="brown1" src="/mp3/colors/brown.mp3">
+            <p>Your browser does not support audio-tags</p>
+          </audio>
+          <button onclick="document.getElementById('brown1').play()">Let's hear brown</button>
+				</div>
+				<div id="geel" class="photopopup" data-history="false" data-role="popup" data-theme="b" data-overlay-theme="b" data-corners="false"><a class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back">Close</a><img src="/images/colors/yellow.jpg" />
+          <audio id="geel1" src="/mp3/colors/yellow.mp3">
+            <p>Your browser does not support audio-tags</p>
+          </audio>
+          <button onclick="document.getElementById('geel1').play()">Let's hear yellow</button>
+				</div>
+				<div id="green" class="photopopup" data-history="false" data-role="popup" data-theme="b" data-overlay-theme="b" data-corners="false"><a class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back">Close</a><img src="/images/colors/green.jpg" />
+          <audio id="green1" src="/mp3/colors/green.mp3">
+            <p>Your browser does not support audio-tags</p>
+          </audio>
+          <button onclick="document.getElementById('green1').play()">Let's hear green</button>
+				</div>
+				<div id="white" class="photopopup" data-history="false" data-role="popup" data-theme="b" data-overlay-theme="b" data-corners="false"><a class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back">Close</a><img src="/images/colors/white.jpg" />
+          <audio id="white1" src="/mp3/colors/white.mp3">
+            <p>Your browser does not support audio-tags</p>
+          </audio>
+          <button onclick="document.getElementById('white1').play()">Let's hear white</button>
+				</div>
+				<div id="purple" class="photopopup" data-history="false" data-role="popup" data-theme="b" data-overlay-theme="b" data-corners="false"><a class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back">Close</a><img src="/images/colors/purple.jpg" />
+          <audio id="purple1" src="/mp3/colors/purple.mp3">
+            <p>Your browser does not support audio-tags</p>
+          </audio>
+          <button onclick="document.getElementById('purple1').play()">Let's hear purple</button>
+				</div>
+      </div>
+			<div data-role="footer" data-position="fixed">
+				<h3>&copy; Manoah T</h3>
+			</div>
+		</div>
+  </body>
+</html>

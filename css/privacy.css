@@ -1,0 +1,41 @@
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  font-family: Aileron_SemiBold;
+  margin: 0px;
+  background-color: #0092ed;
+  
+  /* No select */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Custom font */
+@font-face {
+  font-family: "Aileron_SemiBold";
+  src: url("/fonts/Aileron-SemiBold.otf");
+}
+
+h1, h2, h3, h4, p, ul {
+  margin-left:50px;
+  margin-right: 10px;
+}
+
+form {
+  position: fixed; 
+  bottom: 0px; 
+  right: 0px;
+}
+
+select {
+  width: 200px;
+  padding: 12px 10px;
+  margin: 5px 5px 5px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

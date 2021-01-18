@@ -1,0 +1,1 @@
+This website is built by Manoah. A Dutch student who's plan it is to make a living with this kind of work. The code is written with Codeanywhere and a lot of code was taken from W3schools. 

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+
+h1 {color: red;}
+h2 {font-size: 1.5em; color: blue;}
+p {color: grey;}
+
+article header {
+  font-family: "Courier New","Lucida Console";
+  font-size: 32px;
+  color: #FF0000;
+}
+article p {
+  font-family: "Cedarville Cursive";
+  font-size: 1vw;
+  color: blue;
+}
+
+article footer {
+  font-size: 16px;
+  color: pink;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  font-family: Aileron_SemiBold;
+  margin: 0px;
+  background-color: yellow;
+
+  /* No select */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Custom font */
+@font-face {
+  font-family: "Aileron_SemiBold";
+  src: url("/fonts/Aileron-SemiBold.otf");
+}
+
+/* Custom logo style */
+.HomeLogo {
+  margin: -5px 6px 0px 0px !important;
+}
+
+/* Cookie message */
+span a {
+  opacity: .8 !important;
+  text-decoration:underline !important;
+}
+
+span a:hover {
+  opacity: 1 !important;
+  text-decoration:none !important;
+}
+
+.cookieinfo-close:hover {
+  background-color: #ffe41a !important;
+}
+
+@media screen and (max-width: 701px) {
+  .cookieinfo-close {
+    min-width: 98% !important;
+  }
+}
+
+/* Google Translate */
+#google_translate_element {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}

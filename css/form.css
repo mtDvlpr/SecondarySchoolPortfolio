@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Text input area */
+.form-container input[type=text], input[type=password], input[type=email], input[type=number], input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: white;
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+
+.form-container .col-20 label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Submit button */
+.form-container input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.form-container input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  height: 200px;
+}
+
+.form-container .col-20 label span {font-size: 10px;}
+
+.inputpic {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputpic + label {
+  font-weight: bold;
+  color: black;
+  display: inline;
+}
+
+.inputpic:focus + label,
+.inputpic + label:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* Form */
+.form-container {
+  width: 60%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 10px;
+  color: black;
+}
+
+.form-container p {
+  text-align:center;
+  font-size: 15px;
+}
+
+p.failure {
+  color: red;
+}
+
+p.succes {
+  color: green;
+}
+
+/* Label column */
+.col-20 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+/* Textarea column */
+.col-60 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 968px) {
+  .form-container, .col-20, .col-60, .form-container input[type=submit] {
+    width: 60%;
+    margin: 0 20% 1% 20%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form-container, .col-20, .col-60, .form-container input[type=submit] {
+    width: 80%;
+    margin: 0 10% 1% 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-container, .col-20, .col-60, .form-container input[type=submit] {
+    width: 98%;
+    margin: 0 1% 1% 1%;
+  }
+}

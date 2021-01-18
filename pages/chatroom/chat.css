@@ -1,0 +1,57 @@
+body {
+  background-color: #0092ed;
+  font-family: Aileron_SemiBold;
+
+  /* No select */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Custom font */
+@font-face {
+  font-family: "Aileron_SemiBold";
+  src: url("/fonts/Aileron-SemiBold.otf");
+}
+
+.chat .users, .chat .chatbox{
+ display:inline-block;
+ vertical-align:top;
+ height:350px;
+ padding:0px 15px;
+}
+.chat .users{
+ background:#CCC;
+ color:white;
+ width:98px;
+ height: 365px;
+ overflow-y:auto;
+}
+.chat .chatbox{
+ background:#fff;
+ color:black;
+ margin-left:4px;
+ width:350px;
+ height: 365px;
+}
+.chat .chatbox .msgs{
+ border-top:1px solid black;
+ border-bottom:1px solid black;
+ overflow-y:auto;
+ height:260px;
+  margin-bottom:5px;
+}
+.chat .chatbox #msg_form{
+ padding-top:1.5px;
+}
+.chat .error{color:red;}
+.chat .success{color:green;}
+.chat .msgs .msg, .chat .users .user{border-bottom:1px solid black;padding:4px 0px;white-space:pre-line;word-break:break-word;}
+.chat {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -25%)
+}

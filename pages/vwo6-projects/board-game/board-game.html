@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Board game - 149895.csgja.com</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Manoah T"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/images/logos/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+     
+    <!-- JavaScript -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+  </head>
+  <body>
+    <div id="pag1" data-role="page" data-theme="b">
+    <div data-role="header" style="text-align: center;">
+      <a href="/vwo-6" target="_self" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext"></a>
+      <div style="margin:.6em 0;">Board game</div>
+    </div>
+    <div role="main" class="ui-content">
+      <form action="play" method="post">
+        <label class="ui-accessible" for="name1">Player 1:</label>
+        <input name="name1" id="name1" type="text" placeholder="Fill in your name" value="" data-mini="true" required>
+        <label class="ui-hidden-accessible" for="color1">Choose a color</label>
+        <select name="color1" id="color1" data-native-menu="false" data-mini="true" required>
+          <option value="">Choose a color</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+          <option value="yellow">Yellow</option>
+          <option value="purple">Purple</option>
+          <option value="black">Black</option>
+        </select>
+        <br>
+        <label class="ui-accessible" for="name2">Player 2:</label>
+        <input name="name2" id="name2" type="text" placeholder="Fill in your name" value="" data-mini="true" required>
+        <label class="ui-hidden-accessible" for="color2">Choose a color</label>
+        <select name="color2" id="color2" data-native-menu="false" data-mini="true" required>
+          <option value="">Choose a color</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+          <option value="yellow">Yellow</option>
+          <option value="purple">Purple</option>
+          <option value="black">Black</option>
+        </select>
+        <br>
+        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+          <label for="s1">Player 1 begins</label>
+          <input name="turn" id="s1" type="radio" checked="checked" value="1">
+          <label for="s2">Player 2 begins</label>
+          <input name="turn" id="s2" type="radio" value="2">
+        </fieldset>
+        <br>
+        <label class="ui-hidden-accessible" for="play">play:</label>
+        <button class="ui-shadow ui-btn ui-corner-all ui-mini" id="play" type="submit" name="play">Play</button>
+      </form>
+      <div data-role="footer" data-position="fixed">
+        <h3>&copy; Manoah T</h3>
+      </div>
+    </div>
+  </body>
+</html>

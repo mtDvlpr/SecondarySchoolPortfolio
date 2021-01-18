@@ -1,0 +1,201 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #0092ed;
+  font-family: Aileron_SemiBold;
+  overflow: auto;
+  margin: 0px;
+
+  /* No select */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Custom font */
+@font-face {
+  font-family: "Aileron_SemiBold";
+  src: url("/fonts/Aileron-SemiBold.otf");
+}
+
+/* Title */
+header {
+  font-size: 5vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+p {
+  font-size: 25px;
+}
+
+/* Buttons */
+.button {
+  width: auto;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 100%;
+  text-decoration: none;
+  background: #3366cc;
+  color: #fff;
+  margin: 0 0 1% 1%;
+  border: 0px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #00368e;
+  border: 0px;
+}
+
+/* Clear button */
+.clearbtn {
+  float: right;
+  display: block;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 100%;
+  text-decoration: none;
+  background: #f44336;
+  color: #fff;
+  margin: 0 1% 5px 0;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.clearbtn:hover {
+  background: #d10000;
+  border: 0px;
+}
+
+/*Input fields */
+input[type=number] {
+  width: 100px;
+  padding: 12px 10px;
+  margin: 5px 0 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.select {
+  width: 200px;
+  padding: 8px 10px;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+/* Radio buttons */
+#choiceForm {
+  margin-top: 30px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {background-color: #ccc;}
+.container input:checked ~ .checkmark {background-color: blue;}
+.container input:checked ~ .checkmark:after {display: block;}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/*Range input fields */
+.slidecontainer {
+    margin-left: 20px;
+    width: 99%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    margin-left: 10px;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: blue;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: blue;
+    cursor: pointer;
+}
+
+/* Google Translate */
+#google_translate_element {
+  position: fixed; 
+  bottom: 0px; 
+  right: 0px;
+}
